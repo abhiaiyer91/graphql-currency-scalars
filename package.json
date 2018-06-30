@@ -1,0 +1,29 @@
+{
+  "name": "graphql-currency-scalars",
+  "version": "0.0.0",
+  "description": "GraphQL Scalars for formatting Currency",
+  "main": "lib/index.js",
+  "author": "Abhi Aiyer",
+  "license": "MIT",
+  "peerDependencies": {
+    "graphql": "0.13.2",
+    "lodash": "4.17.10"
+  },
+  "devDependencies": {
+    "@workpop/eslint-config-workpop": "^1.0.2",
+    "babel-cli": "^6.26.0",
+    "babel-eslint": "^8.2.5",
+    "babel-plugin-transform-export-extensions": "^6.22.0",
+    "babel-preset-env": "^1.7.0",
+    "chai": "^4.1.2",
+    "eslint": "^5.0.1",
+    "graphql": "^0.13.2",
+    "mocha": "^5.2.0"
+  },
+  "scripts": {
+    "lint": "eslint . --fix",
+    "testonly": "BABEL_ENV=mocha mocha ./__tests__ --compilers js:babel-register",
+    "test-watch": "npm run testonly -- --watch --watch-extensions js",
+    "build": "babel ./src --out-dir ./lib"
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "parser": "babel-eslint",
+  "extends": [
+    "@workpop/eslint-config-workpop"
+  ],
+  "rules": {
+    "no-unused-expressions": 0
+  }
+}
