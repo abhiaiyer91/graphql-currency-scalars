@@ -1302,6 +1302,20 @@ foreach@^2.0.5:
   version "2.0.5"
   resolved "https://registry.yarnpkg.com/foreach/-/foreach-2.0.5.tgz#0bee005018aeb260d0a3af3ae658dd0136ec1b99"
 
+format-currency@^1.0.0:
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/format-currency/-/format-currency-1.0.0.tgz#f907943f390c2ff36be2a51b0a6fb25ad3fe01c8"
+  integrity sha1-+QeUPzkML/Nr4qUbCm+yWtP+Acg=
+  dependencies:
+    format-num "^1.0.0"
+
+format-num@^1.0.0:
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/format-num/-/format-num-1.0.0.tgz#a0314cc47301212a061e76cf15ead8e614207077"
+  integrity sha1-oDFMxHMBISoGHnbPFerY5hQgcHc=
+  dependencies:
+    parse-num "^1.0.0"
+
 fs-minipass@^1.2.5:
   version "1.2.5"
   resolved "https://registry.yarnpkg.com/fs-minipass/-/fs-minipass-1.2.5.tgz#06c277218454ec288df77ada54a03b8702aacb9d"
@@ -1980,6 +1994,11 @@ parse-json@^2.2.0:
   resolved "https://registry.yarnpkg.com/parse-json/-/parse-json-2.2.0.tgz#f480f40434ef80741f8469099f8dea18f55a4dc9"
   dependencies:
     error-ex "^1.2.0"
+
+parse-num@^1.0.0:
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/parse-num/-/parse-num-1.0.0.tgz#abd8b339c157a23d3ef87953ceb11f1dd08059d0"
+  integrity sha1-q9izOcFXoj0++HlTzrEfHdCAWdA=
 
 path-exists@^2.0.0:
   version "2.1.0"

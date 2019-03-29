@@ -25,5 +25,8 @@
     "testonly": "BABEL_ENV=mocha mocha ./__tests__ --compilers js:babel-register",
     "test-watch": "npm run testonly -- --watch --watch-extensions js",
     "build": "babel ./src --out-dir ./lib"
+  },
+  "dependencies": {
+    "format-currency": "^1.0.0"
   }
 }

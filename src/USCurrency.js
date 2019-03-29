@@ -1,4 +1,5 @@
 import { GraphQLScalarType } from 'graphql';
+import formatCurrency from 'format-currency'
 import { Kind } from 'graphql/language';
 import { isString, isNumber } from 'lodash';
 
@@ -9,13 +10,15 @@ function generateCurrency(value) {
     );
   }
 
+  let opts = { format: '%s%v', code: 'USD', symbol: '$' }
+
   const currencyInCents = parseInt(value, 10);
 
-  return `$${(currencyInCents / 100).toFixed(2)}`;
+  return formatCurrency(currencyInCents / 100, opts)
 }
 
 function generateCents(value) {
-  const digits = value.replace('$', '');
+  const digits = value.replace('$', '').replace(',', '');
   const number = parseFloat(digits, 10);
   return number * 100;
 }
